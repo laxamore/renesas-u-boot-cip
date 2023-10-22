@@ -202,6 +202,11 @@ config TARGET_SMARC_RZG2LC
 	help
           Support for Renesas RZ/G2LC Dev Platform
 
+config TARGET_RZG2LC_CUSTOM
+	bool "RZ/G2LC custom board"
+	help
+          Support for Transtrack Custom RZ/G2LC Platform
+
 config TARGET_RZG2UL_TYPE1_DEV
 	bool "RZ/G2UL TYPE1 Dev board"
 	help
@@ -241,6 +246,7 @@ source "board/renesas/rzg2l-dev/Kconfig"
 source "board/renesas/rzv2l-dev/Kconfig"
 source "board/renesas/rzg2lc-dev/Kconfig"
 source "board/renesas/rzg2ul-dev/Kconfig"
+source "board/transtrack/rzg2lc-custom/Kconfig"
 
 config MULTI_DTB_FIT_UNCOMPRESS_SZ
 	default 0x80000 if TARGET_HIHOPE_RZG2

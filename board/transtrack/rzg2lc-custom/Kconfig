@@ -1,0 +1,16 @@
+if TARGET_RZG2LC_CUSTOM
+
+config SYS_SOC
+	default "rmobile"
+
+config SYS_BOARD
+	default "rzg2lc-custom"
+
+config SYS_VENDOR
+	default "transtrack"
+
+config SYS_CONFIG_NAME
+	default "transtrack_rzg2lc-custom"
+
+endif
+
